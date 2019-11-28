@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "src"
+  },
+  "exclude": ["node_modules", "generated", "dist"],
+  "references": [{ "path": "../core" }, { "path": "../shared-types" }]
+}

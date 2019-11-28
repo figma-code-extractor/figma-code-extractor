@@ -1,0 +1,38 @@
+# OSX
+#
+.DS_Store
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# yarn
+yarn-debug.log
+
+# lerna
+lerna-debug.log
+
+
+# vscode
+
+.vscode
+
+# development
+
+token.txt
+figma-code-extractor.config.js
+generated
+
+
+# built packages
+
+packages/*/dist
+packages/*/node_modules
+
+
+# typescript build caching
+
+tsconfig.tsbuildinfo
+packages/*/generated

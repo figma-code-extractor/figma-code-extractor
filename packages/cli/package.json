@@ -1,0 +1,36 @@
+{
+  "name": "@figma-code-extractor/cli",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Luke John <figma-code-extractor@lukejohn.me>",
+  "homepage": "",
+  "license": "MIT",
+  "bin": "cli.js",
+  "main": "dist/cli.js",
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist && rm -rf tsconfig.tsbuildinfo",
+    "compile": "tsc -b tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "@types/yargs": "^13.0.3",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@figma-code-extractor/core": "^0.0.0",
+    "cosmiconfig": "^6.0.0",
+    "yargs": "^15.0.0"
+  }
+}
