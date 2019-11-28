@@ -1,6 +1,6 @@
 {
   "name": "figma-code-extractor",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Luke John <figma-code-extractor@lukejohn.me>",
   "license": "MIT",
   "private": true,
@@ -8,9 +8,11 @@
     "bootstrap": "yarn lerna bootstrap",
     "build": "yarn lerna run build",
     "compile": "yarn lerna run compile",
+    "bump-version": "yarn changeset version",
     "local-extract": "yarn bootstrap && yarn build && figmaToken=$(cat ./token.txt) node packages/cli extract"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.4.0",
     "lerna": "^3.19.0",
     "prettier": "^1.19.1",
     "typescript": "^3.7.2"
