@@ -4,12 +4,14 @@
   "author": "Luke John <figma-code-extractor@lukejohn.me>",
   "license": "MIT",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "bootstrap": "yarn lerna bootstrap",
     "build": "yarn lerna run build",
     "compile": "yarn lerna run compile",
     "bump-version": "yarn changeset version",
-    "local-extract": "yarn bootstrap && yarn build && figmaToken=$(cat ./token.txt) node packages/cli extract"
+    "local-extract": "yarn build && figmaToken=$(cat ./token.txt) node packages/cli extract"
   },
   "devDependencies": {
     "@changesets/cli": "^2.4.0",
