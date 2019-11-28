@@ -1,0 +1,17 @@
+{
+  "name": "shared-types",
+  "version": "0.0.0",
+  "description": "shared types, not for publishing",
+  "author": "Luke John <figma-code-extractor@lukejohn.me>",
+  "license": "MIT",
+  "directories": {
+    "src": "lib"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "clean": "rm -rf ./dist && rm -rf tsconfig.tsbuildinfo",
+    "compile": "tsc -b tsconfig.json"
+  }
+}
