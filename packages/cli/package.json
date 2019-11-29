@@ -15,7 +15,12 @@
     "dist"
   ],
   "publishConfig": {
-    "registry": "https://registry.yarnpkg.com"
+    "registry": "https://npm.pkg.github.com/@luke-john"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:luke-john/figma-code-extractor.git",
+    "directory": "packages/cli"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
